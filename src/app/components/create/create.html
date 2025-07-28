@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="tittle">
+        <h3>agregar producto</h3>
+    </div>
+    <div class="create">
+        <div class="form-group n">
+            <p class="legend">nombre</p>
+            <input type="text" placeholder="nombre" [(ngModel)]="product.name">
+        </div>
+        <div class="form-group p">
+            <p class="legend">precio</p>
+            <input type="number" placeholder="precio" [(ngModel)]="product.price">
+        </div>
+        <div class="form-group c">
+            <p class="legend">costo</p>
+            <input type="number" placeholder="costo" [(ngModel)]="product.cost">
+        </div>
+        <div class="form-group g">
+            <p class="legend">categoria</p>
+            <input type="text" placeholder="categoria" [(ngModel)]="product.category">
+        </div>
+        <div class="form-group s">
+            <p class="legend">stock</p>
+            <input type="number" placeholder="stock" [(ngModel)]="product.stock">
+        </div>
+        <div class="form-group i">
+            <p class="legend">image</p>
+            <input type="text" placeholder="image link" [(ngModel)]="product.image">
+        </div>
+        <div class="form-group e">
+            <p class="legend">pagina</p>
+            <input type="text" placeholder="pagina" [(ngModel)]="product.page">
+        </div>
+        <div class="form-group b">
+            <button (click)="send()">finalizar</button>
+        </div>
+    </div>
+</div>

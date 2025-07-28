@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="tittle">
+        <h3>vender: {{this.data.id}}</h3>
+    </div>
+    <div class="create">
+        <div class="form-group f" >
+            <p class="legend">precio de entrega</p>
+            <input type="number" class="first" placeholder="primera cuota" [(ngModel)]="data.first_quote">
+        </div>
+        <div class="form-group q">
+            <p class="legend">cantidad de unidades</p>
+            <input type="text" class="quantity" placeholder="cantidad" [(ngModel)]="data.quantity">
+        </div>
+        <div class="form-group d">
+            <p class="legend">fecha de venta</p>
+            <input type="text" class="date" placeholder="fecha" [(ngModel)]="data.date">
+        </div>
+        <div class="form-group t">
+            <p class="legend">datos adicionales</p>
+            <textarea name="" placeholder="datos" (input)="transformer($event)"></textarea>
+        </div>
+        <div class="form-group s">
+            <button class="send" (click)="send()">finalizar</button>
+        </div>
+    </div>
+</div>

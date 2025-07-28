@@ -1,0 +1,18 @@
+<nav class="container">
+    <div class="search">
+        <input class="s" placeholder="search" type="text" [(ngModel)]="target" (keypress)="search($event)">
+    </div>
+    <div class="category">
+        <div class="item" routerLink="home">
+            <h3>productos</h3>
+        </div>
+        <div class="item" routerLink="shells">
+            <h3>ventas</h3>
+        </div>
+    </div>
+    <div class="options">
+        <button class="item" routerLink="new/product">
+            <h3>agregar productos</h3>
+        </button>
+    </div>
+</nav>

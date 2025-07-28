@@ -1,0 +1,40 @@
+<div class="container">
+    @for (item of products; track $index) {
+    <div class="product">
+        <div class="image">
+            <div class="img">
+                <img [src]="item.image" alt="">
+            </div>
+            <div class="shell" [routerLink]="'/shell/product/' + item.id">
+                <h3>S <br> H <br> E <br> L <br> L</h3>
+            </div>
+        </div>
+        <div class="data">
+            <div class="td">
+                <h3>{{item.name}}</h3>
+            </div>
+            <div class="td">
+                <h3>stock: {{item.stock}}</h3>
+            </div>
+            <div class="td">
+                <h3>precio: {{item.price}}</h3>
+            </div>
+            <div class="td">
+                <h3>costo: {{item.cost}}</h3>
+            </div>
+            <div class="td a" [routerLink]="'/shells/'+item.shells.join('<br>')">
+                <h3>ventas</h3>
+            </div>
+            <div class="td">
+                <h3>{{item.category}}</h3>
+            </div>
+            <a class="td a" [href]="item.page">
+                <h3>pagina</h3>
+            </a>
+            <div class="td">
+                <h3>id: {{item.id}}</h3>
+            </div>
+        </div>
+    </div>
+    }
+</div>

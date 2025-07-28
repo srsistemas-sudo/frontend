@@ -1,0 +1,88 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tittle {
+    width: 100%; height: 10%;
+    background: var(--color3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+        font-size: 1.2vw;
+    }
+}
+
+.create {
+    width: 95%; height: 85%;
+    background: var(--color4);
+    display: grid;
+    grid-template-columns: repeat(2, calc((100% - 1vw)/2));
+    grid-template-rows: repeat(7, calc((95% - 3.5vw)/7));
+    gap: .5vw;
+    padding: 2vw 2vw;
+
+    .form-group {
+        width: 100%; height: 100%;
+        p{
+            color: #000;
+            font-size: 2vh;
+        }
+        input, button {
+            width: 100%;
+            height: 70%;
+            background: var(--color1);
+            padding: 0 1vw;
+            font-size: 1.2vw;
+            outline: none;
+            border: none;
+            color: #fff;
+        }
+        button{
+            text-align: center;
+            cursor: pointer;
+            transition: filter ease .2s;
+            &:hover{
+                filter: brightness(1.2);
+            }
+        }
+        &.n{
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+        &.p{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        &.c{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        &.g{
+            grid-column: 1/3;
+            grid-row: 3/4;
+        }
+        &.s{
+            grid-column: 1/3;
+            grid-row: 4/5;
+        }
+        &.i{
+            grid-column: 1/3;
+            grid-row: 5/6;
+        }
+        &.e{
+            grid-column: 1/3;
+            grid-row: 6/7;
+        }
+        &.b{
+            grid-column: 1/3;
+            grid-row: 7/8;
+        }
+    }
+}
