@@ -16,7 +16,7 @@ export const appConfig: ApplicationConfig = {
 
       return {
         link: httpLink.create({
-          uri: 'http://localhost:3000/',
+          uri: 'https://dionisiumhandler-dionisiumenterprise.b4a.run/',
         }),
         cache: new InMemoryCache(),
       };
